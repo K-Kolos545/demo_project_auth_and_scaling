@@ -3,16 +3,15 @@ package com.example.demo_project_auth_and_scaling.log;
 import com.example.demo_project_auth_and_scaling.user.AppUser;
 import com.example.demo_project_auth_and_scaling.user.AuthProvider;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 
 @Entity
 @Builder
-
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "login_events")
