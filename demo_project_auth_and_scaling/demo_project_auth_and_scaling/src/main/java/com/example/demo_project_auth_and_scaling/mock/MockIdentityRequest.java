@@ -4,5 +4,5 @@ import lombok.Data;
 @Data
 public class MockIdentityRequest {
     private String email;
-    private String institution;
+    private String password;
 }
