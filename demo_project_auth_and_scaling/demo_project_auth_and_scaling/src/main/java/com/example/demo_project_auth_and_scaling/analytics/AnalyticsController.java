@@ -30,4 +30,7 @@ public class AnalyticsController {
     public List<SuspiciousUserResponse> suspiciousUsers() {
         return service.getSuspiciousUsers();
     }
+
+    @GetMapping("/all-logins")
+    public List<LoginEvent> allLogins() {return service.allLoginEvents();}
 }

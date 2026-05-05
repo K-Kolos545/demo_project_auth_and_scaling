@@ -36,4 +36,8 @@ public class AnalyticsService {
                 ))
                 .toList();
     }
+
+    public List<LoginEvent> allLoginEvents() {
+        return repository.findAll();
+    }
 }
